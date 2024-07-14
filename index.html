@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; color: hsl(0, 0%, 100%);  }
+    .attribution a { color: hsl(0, 0%, 100%); }
+    body{
+      display: flex;
+      flex-direction: column;
+      border:2px solid black;
+      width:100vw;
+      height: 100vh;
+      padding: 0%;
+      margin:0%;
+      justify-content: center;
+      align-items: center;
+      background-color:hsl(0, 0%, 8%);
+      font-family: "Inter", sans-serif;
+      gap:12px
+    }
+    .main{
+      width:22%;
+      height: 78%;
+      border-radius: 15px;
+      background-color:  hsl(0, 0%, 12%);
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding:5%;
+    }
+    button{
+      width: 100%;
+    }
+    img{
+      width:25%;
+      height: 15%;
+      border-radius: 50%;
+    }
+    .btn-div{
+      display: flex;
+      flex-direction: column;
+      width:100%;
+      height: 50%;
+      justify-content: center;
+      align-items: center;
+      gap:5%;
+    }
+    a.button-link{
+      width: 90%;
+    }
+    button{
+      padding: 4%;
+      border-radius: 5px;
+      background-color:  hsl(0, 0%, 20%);
+      transition: background-color 0.3s ease-in-out;
+      color: white;
+      font-family: "Inter", sans-serif;
+      border-style: none;
+      outline: none;
+      font-size: 14px;
+      font-weight: 400, 600, 700;
+    }
+    button:hover{
+      cursor: pointer;
+      background-color: hsl(0, 0%, 40%);
+    }
+    .address{
+      color: hsl(75, 94%, 57%);
+      font-weight: 400, 600, 700;
+      line-height: 0.2;
+      font-size: 14px;
+    }
+    .name{
+      color: white;
+      font-weight: 400, 600, 700;
+   
+    }
+    .role-p{
+      color:white;
+      font-size: 14px;
+      font-weight: 400, 600, 700;
+      
+    }
+    @media(max-width:450px){
+      .main{
+        width:90%;
+        height:70% ;
+      }
+    }
+    @media(max-width:1000px ){
+      .main{
+        width:70%;
+        height: 78%;
+      }
+    }
+   
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="container">
+     
+      <img src="./assets/images/avatar-jessica.jpeg" alt="profile photo">
+     
+      <div class="about">
+        <h2 class="name">Jessica Randall</h2>
+        <p class="address">London, United Kingdom</p>
+      </div>
+      <div class="role">
+        <p class="role-p">"Front-end developer and avid reader."</p>
+      </div>
+      <div class="btn-div">
+        <a href="https://github.com/Poojachoudhary21" target="_blank" class="button-link">
+          <button>GitHub</button>
+        <a href="https://www.frontendmentor.io/profile/Poojachoudhary21" target="_blank" class="button-link">
+          <button>Frontend Mentor</button>
+        </a>
+        <a href="https://www.linkedin.com/in/pooja-choudhary21/" target="_blank" class="button-link">
+          <button>LinkedIn</button>
+        </a>
+        <a href="" target="_blank" class="button-link">
+          <button>Twitter</button>
+        </a>
+        <a href="" target="_blank" class="button-link">
+          <button>Instagram</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Jessica Randall
+  London, United Kingdom
+  "Front-end developer and avid reader."
+
+  GitHub
+  Frontend Mentor
+  LinkedIn
+  Twitter
+  Instagram -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Pooja Choudhary</a>.
+  </div>
+</body>
+</html>
